@@ -30,6 +30,12 @@ else
   alert("What rock have you been living under?");
   }
 
+// converting "pangram" to uppercase.
+console.log(pangram.toUpperCase())  
+
+// slicin' 'n' dicin' the "pangram"
+console.log(pangram.slice(-3, pangram.length))
+
 // a variable of me.
 
 var me = {
@@ -41,6 +47,10 @@ var me = {
 	hometown: "Round Hill, VA",
 	placesLived: "Charleston, SC, Columbia, SC, Atlanta, GA, Alexandria, VA, Bonn, Germany, Hong Kong, London, England, Boca Raton, FL, Kingston, RI, New York, NY, Los Angeles, CA, Round Hill, VA, Greenville, SC"
 }
+
+console.log(me.living)
+console.log(me.born)
+console.log(me.placesLived)
 
 // Barclays Premier League
 
@@ -77,4 +87,31 @@ function goalDifference (overallGoalsFor, overallGoalsAgainst) {
 	return overallGoalsFor - overallGoalsAgainst;
 }
 
-// console.log(goalDifference(100 - 37))
+// console.log(goalDifference(100 - 37)) - End BPL Soccer Table idea.
+
+
+// getting expressiony with the LOST numbers.
+
+console.log(4 + 8 - 15 * 16 + 23 / 42)
+
+console.log(4 * 8 * 15 / 16 + 23 - 42)
+
+console.log(4 + 8 + 15 + 16 + 23 + 42 / 6)
+
+console.log(4 * 8 * 15 * 16 * 23 * 42 / 6)
+
+console.log(4 + 8 + 15 + 16 + 23 + 42 / 815)
+
+console.log(4 + 8 + 15 + 16 + 23 + 42 / 324)
+
+console.log(4 + 8 + 15 + 16 + 23 + 42 / 108)
+
+// meh ... no idea if they were alive or dead.
+
+// random number generator ...
+
+function gimmeRandomNumbers(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+console.log(gimmeRandomNumbers(0,108))
