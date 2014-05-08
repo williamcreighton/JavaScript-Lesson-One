@@ -1,5 +1,8 @@
 // defining the variable "pangram"
 
+var theFox = "The quick brown fox";
+console.log(theFox.concat(" jumps over the lazy dog"));
+
 var pangram = "The quick brown fox jumps over the lazy dog"
 
 // prints the variable.
@@ -13,6 +16,11 @@ console.log(pangram.split(" "))
 
 // this splits the string into individual letters.
 console.log(pangram.split(""))
+
+// removes the letter "o" from the string.
+console.log(pangram.split("o"))
+
+console.log(pangram.split(" "))
 
 // the lazy dog ...
 console.log(pangram.slice(31,43))
@@ -108,10 +116,16 @@ console.log(4 + 8 + 15 + 16 + 23 + 42 / 108)
 
 // meh ... no idea if they were alive or dead.
 
+// LOST array.
+
+var LOST = [4, 8, 15, 16, 23, 42]
+
+console.log(LOST.join("LOST"))
+
 // random number generator ...
 
 function gimmeRandomNumbers(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  return Math.floor(Math.random() * (max - min + 8) + min);
 }
 
 console.log(gimmeRandomNumbers(0,108))
